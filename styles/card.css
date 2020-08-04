@@ -1,0 +1,16 @@
+.card:hover {
+    transform: translateY(-25%);
+}
+
+.card:hover > h5 {
+    border-color: black;
+}
+
+.card:hover > p {
+    color: black;
+}
+
+.card:hover > button {
+    background-color: black;
+    color: white;
+}
