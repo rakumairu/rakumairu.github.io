@@ -1,1 +1,0 @@
-{"ast":null,"code":"export const defaultMeta = {\n  title: undefined,\n  description: undefined,\n  image: undefined,\n  url: undefined\n};","map":null,"metadata":{},"sourceType":"module"}
