@@ -7,4 +7,4 @@ My name is Demaspira Aulia, aka 'rakumairu', I'm a frontend developer and still 
 To learn more about me, you can contact me by these methods:
 
 - [LinkedIn](https://www.linkedin.com/in/demaspira/)
-- [rakumairu.dev@gmail.com](mailto:rakumairu.dev@gmail.com) - an interactive Next.js tutorial.
+- [Email](mailto:rakumairu.dev@gmail.com) - an interactive Next.js tutorial.
