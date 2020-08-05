@@ -46,11 +46,11 @@ const Home = () => {
                         <button className="mt-auto bg-white rounded-lg px-4 py-2 text-black text-lg font-semibold shadow-4-layer outline-none focus:outline-none">DM Me!</button>
                     </div>
                 </div>
-                <div className="flex md:hidden items-center absolute bottom-0 justify-end mb-4 -ml-4 w-full" style={{ filter: 'brightness(0) saturate(100%) invert(100%) sepia(3%) saturate(12%) hue-rotate(103deg) brightness(105%) contrast(105%)' }}>
-                    <a href="https://github.com/rakumairu" className="bounce">
+                <div className="flex md:hidden items-center sticky -mt-12 bottom-0 justify-end -ml-4 w-full" style={{ filter: 'brightness(0) saturate(100%) invert(100%) sepia(3%) saturate(12%) hue-rotate(103deg) brightness(105%) contrast(105%)' }}>
+                    <a href="https://github.com/rakumairu" className="bounce mb-4" target="__blank">
                         <img src="/static/icons/github.svg" alt="linkedin" className="w-8 mr-4 transition-transform duration-150 ease-linear transform hover:-translate-y-1" />
                     </a>
-                    <a href="https://www.linkedin.com/in/demaspira/" className="bounce-alt">
+                    <a href="https://www.linkedin.com/in/demaspira/" className="bounce-alt mb-4" target="__blank">
                         <img src="/static/icons/linkedin.svg" alt="linkedin" className="w-8 transition-transform duration-150 ease-linear transform hover:-translate-y-1" />
                     </a>
                 </div>
