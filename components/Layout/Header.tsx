@@ -13,7 +13,7 @@ const Header = () => {
                         Rakumairu DEV
                     </a>
                     <div className="ml-auto flex items-center h-full">
-                        <a href="#" className="mx-4 flex items-center font-semibold underline-link">BLOG</a>
+                        <a href="#" className="flex items-center font-semibold underline-link">BLOG</a>
                     </div>
                 </div>
             </div>
