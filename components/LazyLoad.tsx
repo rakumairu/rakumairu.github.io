@@ -25,7 +25,6 @@ const LazyLoad = ({ children, options, direction }: IProps) => {
     }, [])
 
     const callback = ([entry]: IntersectionObserverEntry[]) => {
-        console.log(entry)
         if (entry.isIntersecting && !isVisible) setVisible(true)
     }
 
