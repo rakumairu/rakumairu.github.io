@@ -1,5 +1,6 @@
 import Main from "../components/Layout/Main";
 import { IMeta } from '../utils/Interfaces';
+import LazyLoad from "../components/LazyLoad";
 
 const meta: IMeta = {
     title: "Hi! Welcome to my page | Rakumairu DEV",
@@ -15,16 +16,16 @@ const Home = () => {
             <div className="relative h-screen md:pb-32 bg-gray-ea">
                 <div className="h-full bg-cover bg-no-repeat" style={{ backgroundImage: 'url(/static/images/splash.jpg)', filter: 'brightness(.4)' }} />
                 <div className="absolute inset-0 flex flex-col items-center justify-center md:pb-40">
-                    <div className="flex flex-col w-full md:w-auto px-5 md:px-0">
+                    <div className="font-mono flex flex-col w-full md:w-auto px-5 md:px-0 tracking-tight">
                         <h1 className="text-4xl md:text-6xl text-white leading-tight">
-                            Hi there!
+                            Hello!
                         </h1>
                         <h1 className="text-4xl md:text-6xl text-white leading-tight">
-                            I'm <span className="text-main">Demas</span>pira Aulia
+                            I'm <span className="text-main">Demas</span>pira
                         </h1>
                         <div className="flex items-center">
                             <h1 className="text-4xl md:text-6xl text-white leading-tight">
-                                (aka <span className="text-main">rakumairu</span>)
+                                aka <span className="text-main">rakumairu</span><span className="blink">_</span>
                             </h1>
                         </div>
                     </div>
@@ -57,87 +58,105 @@ const Home = () => {
             </div>
             <div className="pt-24 md:pt-32 pb-32 md:pb-40 bg-gray-ea clip">
                 <div className="container">
-                    <div className="lg:mx-32 flex flex-col md:flex-row items-stretch relative shadow-5-layer">
-                        <h3 className="absolute left-0 top-0 section-header text-center transform -translate-y-full mt-5 md:mt-10 ml-1 md:ml-0 font-bold">What I do ?</h3>
-                        <div className="bg-main-dark w-full md:w-1/2 text-white p-8 md:p-10">
-                            <h5 className="text-3xl md:text-5xl leading-tight md:leading-snug font-bold mb-10 md:mb-16">I'm a Frontend Web Developer</h5>
-                            <span className="border-b-4 border-white block mb-6 md:mb-8" style={{ width: 64 }}></span>
-                            <p className="text-sm md:text-base text-opacity-25">With 1 year experience in developing website for my company and some side projects. I also have some experience in backend development (just the basic tho).</p>
-                        </div>
-                        <div className="bg-white flex w-full md:w-1/2 p-8 md:p-10 pb-6 flex-col justify-between">
-                            <div className="flex items-center self-start flex-wrap justify-center">
-                                <a href="https://reactjs.org/" target="__blank" className="brand-logo mx-4 my-2 transform transition-transform duration-300 ease-in-out hover:scale-150">
-                                    <img src="/static/icons/react-logo.svg" alt="react-logo" />
-                                </a>
-                                <a href="https://nextjs.org/" target="__blank" className="brand-logo mx-4 my-2 transform transition-transform duration-300 ease-in-out hover:scale-150">
-                                    <img src="/static/icons/nextjs-logo.svg" alt="nextjs-logo" />
-                                </a>
-                                <a href="https://vuejs.org/" target="__blank" className="brand-logo mx-4 my-2 transform transition-transform duration-300 ease-in-out hover:scale-150">
-                                    <img src="/static/icons/vue-logo.png" alt="vuejs-logo" />
-                                </a>
-                                <a href="https://nuxtjs.org/" target="__blank" className="brand-logo mx-4 my-2 transform transition-transform duration-300 ease-in-out hover:scale-150">
-                                    <img src="/static/icons/nuxtjs-logo.svg" alt="nuxtjs-logo" className="p-2" />
-                                </a>
-                                <a href="https://laravel.com/" target="__blank" className="brand-logo mx-4 my-2 transform transition-transform duration-300 ease-in-out hover:scale-150">
-                                    <img src="/static/icons/laravel-logo.png" alt="laravel-logo" />
-                                </a>
-                                <a href="https://codeigniter.com/" target="__blank" className="brand-logo mx-4 my-2 transform transition-transform duration-300 ease-in-out hover:scale-150">
-                                    <img src="/static/icons/codeigniter-logo.png" alt="codeigniter-logo" />
-                                </a>
-                                <a href="https://flask.palletsprojects.com/" target="__blank" className="brand-logo mx-4 my-2 transform transition-transform duration-300 ease-in-out hover:scale-150">
-                                    <img src="/static/icons/flask-logo.png" alt="flask-logo" />
-                                </a>
-                                <a href="https://bottlepy.org/" target="__blank" className="brand-logo mx-4 my-2 transform transition-transform duration-300 ease-in-out hover:scale-150">
-                                    <img src="/static/icons/bottle-logo.png" alt="bottle-logo" className="p-2" />
-                                </a>
-                                <a href="https://material-ui.com/" target="__blank" className="brand-logo mx-4 my-2 transform transition-transform duration-300 ease-in-out hover:scale-150">
-                                    <img src="/static/icons/materialui-logo.svg" alt="materialui-logo" />
-                                </a>
-                                <a href="https://getbootstrap.com/" target="__blank" className="brand-logo mx-4 my-2 transform transition-transform duration-300 ease-in-out hover:scale-150">
-                                    <img src="/static/icons/bootstrap-logo.svg" alt="bootstrap-logo" />
-                                </a>
-                                <a href="https://tailwindcss.com/" target="__blank" className="brand-logo mx-4 my-2 transform transition-transform duration-300 ease-in-out hover:scale-150">
-                                    <img src="/static/icons/tailwindcss-logo.svg" alt="tailwindcss-logo" />
-                                </a>
-                                <a href="https://bulma.io/" target="__blank" className="brand-logo mx-4 my-2 transform transition-transform duration-300 ease-in-out hover:scale-150">
-                                    <img src="/static/icons/bulma-logo.png" alt="bulma-logo" className="p-2" />
-                                </a>
-                                <a href="https://www.mysql.com/" target="__blank" className="brand-logo mx-4 my-2 transform transition-transform duration-300 ease-in-out hover:scale-150">
-                                    <img src="/static/icons/mysql-logo.svg" alt="mysql-logo" />
-                                </a>
-                                <a href="https://www.postgresql.org/" target="__blank" className="brand-logo mx-4 my-2 transform transition-transform duration-300 ease-in-out hover:scale-150">
-                                    <img src="/static/icons/postgresql-logo.png" alt="postgresql-logo" />
-                                </a>
+                    <div className="lg:mx-32 relative">
+                        <LazyLoad direction="top">
+                            <h3 className="z-10 absolute left-0 top-0 section-header text-center -mt-12 md:-mt-20 ml-1 md:ml-0 font-bold whitespace-no-wrap">What I do ?</h3>
+                        </LazyLoad>
+                        <LazyLoad direction="right">
+                            <div className="flex flex-col md:flex-row items-stretch shadow-5-layer">
+                                <div className="bg-main-dark w-full md:w-1/2 text-white p-8 md:p-10">
+                                    <h5 className="text-3xl md:text-5xl leading-tight md:leading-snug font-bold mb-10 md:mb-16">I'm a Frontend Web Developer</h5>
+                                    <span className="border-b-4 border-white block mb-6 md:mb-8" style={{ width: 64 }}></span>
+                                    <p className="text-sm md:text-base text-opacity-25">With 1 year experience in developing website for my company and some side projects. I also have some experience in backend development (just the basic tho).</p>
+                                </div>
+                                <div className="bg-white flex w-full md:w-1/2 p-8 md:p-10 pb-6 flex-col justify-between">
+                                    <div className="flex items-center self-start flex-wrap justify-center">
+                                        <a href="https://reactjs.org/" target="__blank" className="brand-logo mx-4 my-2 transform transition-transform duration-300 ease-in-out hover:scale-150">
+                                            <img src="/static/icons/react-logo.svg" alt="react-logo" />
+                                        </a>
+                                        <a href="https://nextjs.org/" target="__blank" className="brand-logo mx-4 my-2 transform transition-transform duration-300 ease-in-out hover:scale-150">
+                                            <img src="/static/icons/nextjs-logo.svg" alt="nextjs-logo" />
+                                        </a>
+                                        <a href="https://vuejs.org/" target="__blank" className="brand-logo mx-4 my-2 transform transition-transform duration-300 ease-in-out hover:scale-150">
+                                            <img src="/static/icons/vue-logo.png" alt="vuejs-logo" />
+                                        </a>
+                                        <a href="https://nuxtjs.org/" target="__blank" className="brand-logo mx-4 my-2 transform transition-transform duration-300 ease-in-out hover:scale-150">
+                                            <img src="/static/icons/nuxtjs-logo.svg" alt="nuxtjs-logo" className="p-2" />
+                                        </a>
+                                        <a href="https://laravel.com/" target="__blank" className="brand-logo mx-4 my-2 transform transition-transform duration-300 ease-in-out hover:scale-150">
+                                            <img src="/static/icons/laravel-logo.png" alt="laravel-logo" />
+                                        </a>
+                                        <a href="https://codeigniter.com/" target="__blank" className="brand-logo mx-4 my-2 transform transition-transform duration-300 ease-in-out hover:scale-150">
+                                            <img src="/static/icons/codeigniter-logo.png" alt="codeigniter-logo" />
+                                        </a>
+                                        <a href="https://flask.palletsprojects.com/" target="__blank" className="brand-logo mx-4 my-2 transform transition-transform duration-300 ease-in-out hover:scale-150">
+                                            <img src="/static/icons/flask-logo.png" alt="flask-logo" />
+                                        </a>
+                                        <a href="https://bottlepy.org/" target="__blank" className="brand-logo mx-4 my-2 transform transition-transform duration-300 ease-in-out hover:scale-150">
+                                            <img src="/static/icons/bottle-logo.png" alt="bottle-logo" className="p-2" />
+                                        </a>
+                                        <a href="https://material-ui.com/" target="__blank" className="brand-logo mx-4 my-2 transform transition-transform duration-300 ease-in-out hover:scale-150">
+                                            <img src="/static/icons/materialui-logo.svg" alt="materialui-logo" />
+                                        </a>
+                                        <a href="https://getbootstrap.com/" target="__blank" className="brand-logo mx-4 my-2 transform transition-transform duration-300 ease-in-out hover:scale-150">
+                                            <img src="/static/icons/bootstrap-logo.svg" alt="bootstrap-logo" />
+                                        </a>
+                                        <a href="https://tailwindcss.com/" target="__blank" className="brand-logo mx-4 my-2 transform transition-transform duration-300 ease-in-out hover:scale-150">
+                                            <img src="/static/icons/tailwindcss-logo.svg" alt="tailwindcss-logo" />
+                                        </a>
+                                        <a href="https://bulma.io/" target="__blank" className="brand-logo mx-4 my-2 transform transition-transform duration-300 ease-in-out hover:scale-150">
+                                            <img src="/static/icons/bulma-logo.png" alt="bulma-logo" className="p-2" />
+                                        </a>
+                                        <a href="https://www.mysql.com/" target="__blank" className="brand-logo mx-4 my-2 transform transition-transform duration-300 ease-in-out hover:scale-150">
+                                            <img src="/static/icons/mysql-logo.svg" alt="mysql-logo" />
+                                        </a>
+                                        <a href="https://www.postgresql.org/" target="__blank" className="brand-logo mx-4 my-2 transform transition-transform duration-300 ease-in-out hover:scale-150">
+                                            <img src="/static/icons/postgresql-logo.png" alt="postgresql-logo" />
+                                        </a>
+                                    </div>
+                                    <p className="text-xs text-black-48 mt-8 md:mt-0">*Most used: reactjs, next js, laravel, tailwindcss, material-ui, mysql</p>
+                                </div>
                             </div>
-                            <p className="text-xs text-black-48 mt-8 md:mt-0">*Most used: reactjs, next js, laravel, tailwindcss, material-ui, mysql</p>
-                        </div>
+                        </LazyLoad>
                     </div>
                 </div>
             </div>
             <div className="pt-24 md:pt-32 pb-24 md:pb-40 bg-white">
                 <div className="container">
-                    <div className="lg:mx-32 flex flex-col md:flex-row items-stretch relative shadow-5-layer">
-                        <h3 className="absolute left-0 top-0 section-header text-center transform -translate-y-full mt-5 md:mt-10 ml-1 md:ml-0 font-bold">Projects .</h3>
-                        <div className="bg-accent w-full md:w-1/2 text-white p-8 md:p-10">
-                            <h5 className="text-3xl md:text-5xl leading-tight md:leading-snug font-bold mb-10 md:mb-16">My Past / Recent Projects</h5>
-                            <span className="border-b-4 border-white block mb-6 md:mb-8" style={{ width: 64 }}></span>
-                            <p className="text-opacity-25">Some of my notable projects since my college year, including my final projects for graduation.</p>
-                        </div>
-                        <div className="bg-white flex w-full md:w-1/2 p-8 md:p-10 flex-col justify-center items-center">
-                            <p className="text-lg text-black-48">Coming Soon</p>
-                        </div>
+                    <div className="lg:mx-32 relative">
+                        <LazyLoad direction="top">
+                            <h3 className="absolute left-0 top-0 section-header text-center -mt-12 md:-mt-20 ml-1 md:ml-0 font-bold whitespace-no-wrap z-10">Projects .</h3>
+                        </LazyLoad>
+                        <LazyLoad direction="left">
+                            <div className="flex flex-col md:flex-row items-stretch shadow-5-layer">
+                                <div className="bg-accent w-full md:w-1/2 text-white p-8 md:p-10">
+                                    <h5 className="text-3xl md:text-5xl leading-tight md:leading-snug font-bold mb-10 md:mb-16">My Past / Recent Projects</h5>
+                                    <span className="border-b-4 border-white block mb-6 md:mb-8" style={{ width: 64 }}></span>
+                                    <p className="text-opacity-25">Some of my notable projects since my college year, including my final projects for graduation.</p>
+                                </div>
+                                <div className="bg-white flex w-full md:w-1/2 p-8 md:p-10 flex-col justify-center items-center">
+                                    <p className="text-lg text-black-48">Coming Soon</p>
+                                </div>
+                            </div>
+                        </LazyLoad>
                     </div>
                 </div>
             </div>
             <div className="pb-16 md:pb-32 bg-white">
                 <div className="container">
                     <div className="lg:mx-32">
-                        <h3 className="font-bold section-header text-black mb-10 text-right md:text-left">Experience .</h3>
+                        <LazyLoad direction="left">
+                            <h3 className="font-bold section-header text-black mb-10 text-right md:text-left">Experience .</h3>
+                        </LazyLoad>
                         <div className="w-full flex flex-col">
                             <div className="flex -mx-5 md:-mx-0">
                                 <div className="w-8 md:w-1/2 flex justify-end">
-                                    <div className="hidden md:flex w-auto items-center justify-center px-8 section-header font-bold text-black text-opacity-25 transition duration-200 ease-in-out hover:text-main hover:text-opacity-100 cursor-default">
-                                        2018
+                                    <div className="hidden md:flex w-auto items-center justify-center px-8 cursor-default">
+                                        <LazyLoad direction="left">
+                                            <div>
+                                                <p className="section-header font-bold text-black text-opacity-25 transition duration-200 ease-in-out hover:text-main hover:text-opacity-100">2018</p>
+                                            </div>
+                                        </LazyLoad>
                                     </div>
                                     <div className="w-8 bg-main px-2 py-8">
                                         <span className="hidden md:flex flex-col items-center h-full justify-center text-lg text-white font-bold leading-none text-center">
@@ -155,14 +174,16 @@ const Home = () => {
                                     </div>
                                 </div>
                                 <div className="w-auto md:w-1/2 flex justify-start">
-                                    <div className="h-full bg-white flex flex-col text-lg px-2 py-8 justify-center">
-                                        <h5 className="text-xl font-semibold text-main">Process Mining Research</h5>
-                                        <p className="mb-4 text-black-48">Contribute in my lecturer's research as Fullstack Developer about process mining.</p>
-                                        <h5 className="text-xl font-semibold text-main">Aid Other Final Project</h5>
-                                        <p className="mb-4 text-black-48">Develop an app for warehouse administration for a Civil Engineering student.</p>
-                                        <h5 className="text-xl font-semibold text-main">Started My Final Project</h5>
-                                        <p className="text-black-48">Started my Final Project for graduation about process mining which use Angular for the frontend and using Flask for the backend and calculation.</p>
-                                    </div>
+                                    <LazyLoad direction="right">
+                                        <div className="h-full bg-white flex flex-col text-lg px-2 py-8 justify-center">
+                                            <h5 className="text-xl font-semibold text-main">Process Mining Research</h5>
+                                            <p className="mb-4 text-black-48">Contribute in my lecturer's research as Fullstack Developer about process mining.</p>
+                                            <h5 className="text-xl font-semibold text-main">Aid Other Final Project</h5>
+                                            <p className="mb-4 text-black-48">Develop an app for warehouse administration for a Civil Engineering student.</p>
+                                            <h5 className="text-xl font-semibold text-main">Started My Final Project</h5>
+                                            <p className="text-black-48">Started my Final Project for graduation about process mining which use Angular for the frontend and using Flask for the backend and calculation.</p>
+                                        </div>
+                                    </LazyLoad>
                                 </div>
                             </div>
                             <div className="flex -mx-5 md:-mx-0">
@@ -181,8 +202,12 @@ const Home = () => {
                                             9
                                         </span>
                                     </div>
-                                    <div className="w-auto hidden md:flex items-center justify-center px-8 section-header font-bold text-black text-opacity-25 transition duration-200 ease-in-out hover:text-accent hover:text-opacity-100 cursor-default">
-                                        2019
+                                    <div className="w-auto hidden md:flex items-center justify-center px-8 cursor-default">
+                                        <LazyLoad direction="right">
+                                            <div>
+                                                <p className="section-header font-bold text-black text-opacity-25 transition duration-200 ease-in-out hover:text-accent hover:text-opacity-100">2019</p>
+                                            </div>
+                                        </LazyLoad>
                                     </div>
                                 </div>
                                 <div className="w-auto md:w-1/2 flex justify-start md:justify-end md:order-1">
@@ -199,8 +224,12 @@ const Home = () => {
                             </div>
                             <div className="flex -mx-5 md:-mx-0">
                                 <div className="w-8 md:w-1/2 flex justify-end">
-                                    <div className="hidden md:flex w-auto items-center justify-center px-8 section-header font-bold text-black text-opacity-25 transition duration-200 ease-in-out hover:text-main hover:text-opacity-100 cursor-default">
-                                        2020
+                                    <div className="hidden md:flex w-auto items-center justify-center px-8">
+                                        <LazyLoad direction="left">
+                                            <div>
+                                                <p className="section-header font-bold text-black text-opacity-25 transition duration-200 ease-in-out hover:text-main hover:text-opacity-100 cursor-default">2020</p>
+                                            </div>
+                                        </LazyLoad>
                                     </div>
                                     <div className="w-8 bg-main px-2 py-8">
                                         <span className="hidden md:flex flex-col items-center h-full justify-center text-lg text-white font-bold leading-none text-center">
@@ -232,8 +261,12 @@ const Home = () => {
                                     <div className="w-8 h-full bg-accent flex flex-col items-center justify-center text-lg text-white font-bold leading-none px-2 py-8 text-center">
                                         .<br/>.<br/>.
                                     </div>
-                                    <div className="w-auto hidden md:flex items-center justify-center px-8 section-header font-bold text-black text-opacity-25 transition duration-200 ease-in-out hover:text-accent hover:text-opacity-100 cursor-default">
-                                        . . .
+                                    <div className="w-auto hidden md:flex items-center justify-center px-8">
+                                        <LazyLoad direction="right">
+                                            <div>
+                                                <p className="section-header font-bold text-black text-opacity-25 transition duration-200 ease-in-out hover:text-accent hover:text-opacity-100 cursor-default">. . .</p>
+                                            </div>
+                                        </LazyLoad>
                                     </div>
                                 </div>
                                 <div className="w-auto md:w-1/2 flex justify-start md:justify-end md:order-1">
