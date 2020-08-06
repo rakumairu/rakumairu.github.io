@@ -6,8 +6,8 @@ interface IProps {
     children: React.ReactNode
     /** Options for the IntersectionObserver */
     options?: IntersectionObserverInit
-    /** Direction the element comes from */
-    direction?: 'top' | 'bottom' | 'left' | 'right'
+    /** Direction the element comes from, right is having trouble with overflow on mobile */
+    direction?: 'top' | 'bottom' | 'left'
 }
 
 const LazyLoad = ({ children, options, direction }: IProps) => {
