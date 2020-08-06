@@ -39,10 +39,10 @@
     transform: translateX(0);
 }
 
-.hide.right > *:first-child {
+/* .hide.right > *:first-child {
     transform: translateX(25px);
 }
 
 .show.right > *:first-child {
     transform: translateX(0);
-}
+} */

@@ -62,7 +62,7 @@ const Home = () => {
                         <LazyLoad direction="top">
                             <h3 className="z-10 absolute left-0 top-0 section-header text-center -mt-12 md:-mt-20 ml-1 md:ml-0 font-bold whitespace-no-wrap">What I do ?</h3>
                         </LazyLoad>
-                        <LazyLoad direction="right">
+                        <LazyLoad direction="left">
                             <div className="flex flex-col md:flex-row items-stretch shadow-5-layer">
                                 <div className="bg-main-dark w-full md:w-1/2 text-white p-8 md:p-10">
                                     <h5 className="text-3xl md:text-5xl leading-tight md:leading-snug font-bold mb-10 md:mb-16">I'm a Frontend Web Developer</h5>
@@ -152,7 +152,7 @@ const Home = () => {
                             <div className="flex -mx-5 md:-mx-0">
                                 <div className="w-8 md:w-1/2 flex justify-end">
                                     <div className="hidden md:flex w-auto items-center justify-center px-8 cursor-default">
-                                        <LazyLoad direction="left">
+                                        <LazyLoad direction="top">
                                             <div>
                                                 <p className="section-header font-bold text-black text-opacity-25 transition duration-200 ease-in-out hover:text-main hover:text-opacity-100">2018</p>
                                             </div>
@@ -174,7 +174,7 @@ const Home = () => {
                                     </div>
                                 </div>
                                 <div className="w-auto md:w-1/2 flex justify-start">
-                                    <LazyLoad direction="right">
+                                    <LazyLoad direction="bottom">
                                         <div className="h-full bg-white flex flex-col text-lg px-2 py-8 justify-center">
                                             <h5 className="text-xl font-semibold text-main">Process Mining Research</h5>
                                             <p className="mb-4 text-black-48">Contribute in my lecturer's research as Fullstack Developer about process mining.</p>
@@ -203,7 +203,7 @@ const Home = () => {
                                         </span>
                                     </div>
                                     <div className="w-auto hidden md:flex items-center justify-center px-8 cursor-default">
-                                        <LazyLoad direction="right">
+                                        <LazyLoad direction="top">
                                             <div>
                                                 <p className="section-header font-bold text-black text-opacity-25 transition duration-200 ease-in-out hover:text-accent hover:text-opacity-100">2019</p>
                                             </div>
@@ -211,21 +211,23 @@ const Home = () => {
                                     </div>
                                 </div>
                                 <div className="w-auto md:w-1/2 flex justify-start md:justify-end md:order-1">
-                                    <div className="h-full bg-white flex flex-col text-lg px-2 py-8 md:text-right justify-center">
-                                        <h5 className="text-xl font-semibold text-accent">Finish My Final Project</h5>
-                                        <p className="mb-4 text-black-48">Finishes my final project for graduation and publish the results as a journal article in <a className="text-accent hover:text-accent-dark" href="http://journals.ums.ac.id/index.php/khif">KHIF</a>, and here is the link to <a className="text-accent hover:text-accent-dark" href="https://www.researchgate.net/publication/339382239_The_Design_of_Exploratory_Application_and_Preprocessing_of_Event_Log_Data_in_LMS_Moodle-Based_Online_Learning_Activities_for_Process_Mining">My Article</a>.</p>
-                                        <h5 className="text-xl font-semibold text-accent">Fraud Detection Research</h5>
-                                        <p className="mb-4 text-black-48">Contribute in my lecturer's research as Frontend Developer about fraud detection using Isolation Forest Algorithm.</p>
-                                        <h5 className="text-xl font-semibold text-accent mb-4">Graduated College!!!</h5>
-                                        <h5 className="text-xl font-semibold text-accent">First Full-time Work</h5>
-                                        <p className="text-black-48">I join Emporia Digital as Frontend Developer, we're using Laravel and Lumen here.</p>
-                                    </div>
+                                    <LazyLoad direction="bottom">
+                                        <div className="h-full bg-white flex flex-col text-lg px-2 py-8 md:text-right justify-center">
+                                            <h5 className="text-xl font-semibold text-accent">Finish My Final Project</h5>
+                                            <p className="mb-4 text-black-48">Finishes my final project for graduation and publish the results as a journal article in <a className="text-accent hover:text-accent-dark" href="http://journals.ums.ac.id/index.php/khif">KHIF</a>, and here is the link to <a className="text-accent hover:text-accent-dark" href="https://www.researchgate.net/publication/339382239_The_Design_of_Exploratory_Application_and_Preprocessing_of_Event_Log_Data_in_LMS_Moodle-Based_Online_Learning_Activities_for_Process_Mining">My Article</a>.</p>
+                                            <h5 className="text-xl font-semibold text-accent">Fraud Detection Research</h5>
+                                            <p className="mb-4 text-black-48">Contribute in my lecturer's research as Frontend Developer about fraud detection using Isolation Forest Algorithm.</p>
+                                            <h5 className="text-xl font-semibold text-accent mb-4">Graduated College!!!</h5>
+                                            <h5 className="text-xl font-semibold text-accent">First Full-time Work</h5>
+                                            <p className="text-black-48">I join Emporia Digital as Frontend Developer, we're using Laravel and Lumen here.</p>
+                                        </div>
+                                    </LazyLoad>
                                 </div>
                             </div>
                             <div className="flex -mx-5 md:-mx-0">
                                 <div className="w-8 md:w-1/2 flex justify-end">
                                     <div className="hidden md:flex w-auto items-center justify-center px-8">
-                                        <LazyLoad direction="left">
+                                        <LazyLoad direction="top">
                                             <div>
                                                 <p className="section-header font-bold text-black text-opacity-25 transition duration-200 ease-in-out hover:text-main hover:text-opacity-100 cursor-default">2020</p>
                                             </div>
@@ -247,13 +249,15 @@ const Home = () => {
                                     </div>
                                 </div>
                                 <div className="w-auto md:w-1/2 flex justify-start">
-                                    <div className="h-full bg-white flex flex-col text-lg px-2 py-8 justify-center">
-                                        <h5 className="text-xl font-semibold text-main">Mutated to Child Company</h5>
-                                        <p className="mb-4 text-black-48">Got mutated to other child company as fullstack developer and network engineering.</p>
-                                        <h5 className="text-xl font-semibold text-main">Join Jendela360</h5>
-                                        <p className="mb-4 text-black-48">Join <a className="text-main hover:text-main-dark" href="https://jendela360.com/">Jendela360</a> as Frontend Developer, we're using React and NextJs here.</p>
-                                        <h5 className="text-xl font-semibold text-main">Create My First Portfolio Page!!!</h5>
-                                    </div>
+                                    <LazyLoad direction="bottom">
+                                        <div className="h-full bg-white flex flex-col text-lg px-2 py-8 justify-center">
+                                            <h5 className="text-xl font-semibold text-main">Mutated to Child Company</h5>
+                                            <p className="mb-4 text-black-48">Got mutated to other child company as fullstack developer and network engineering.</p>
+                                            <h5 className="text-xl font-semibold text-main">Join Jendela360</h5>
+                                            <p className="mb-4 text-black-48">Join <a className="text-main hover:text-main-dark" href="https://jendela360.com/">Jendela360</a> as Frontend Developer, we're using React and NextJs here.</p>
+                                            <h5 className="text-xl font-semibold text-main">Create My First Portfolio Page!!!</h5>
+                                        </div>
+                                    </LazyLoad>
                                 </div>
                             </div>
                             <div className="flex -mx-5 md:-mx-0">
@@ -262,7 +266,7 @@ const Home = () => {
                                         .<br/>.<br/>.
                                     </div>
                                     <div className="w-auto hidden md:flex items-center justify-center px-8">
-                                        <LazyLoad direction="right">
+                                        <LazyLoad direction="top">
                                             <div>
                                                 <p className="section-header font-bold text-black text-opacity-25 transition duration-200 ease-in-out hover:text-accent hover:text-opacity-100 cursor-default">. . .</p>
                                             </div>
@@ -270,9 +274,11 @@ const Home = () => {
                                     </div>
                                 </div>
                                 <div className="w-auto md:w-1/2 flex justify-start md:justify-end md:order-1">
-                                    <div className="h-full bg-white flex flex-col text-lg px-2 py-8 text-right justify-center">
-                                        <h5 className="text-xl font-semibold text-accent">Let's see where I'll go next!</h5>
-                                    </div>
+                                    <LazyLoad direction="bottom">
+                                        <div className="h-full bg-white flex flex-col text-lg px-2 py-8 text-right justify-center">
+                                            <h5 className="text-xl font-semibold text-accent">Let's see where I'll go next!</h5>
+                                        </div>
+                                    </LazyLoad>
                                 </div>
                             </div>
                         </div>
